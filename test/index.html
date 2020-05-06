@@ -2,7 +2,6 @@
   <head>
     <title>Mocha</title>
     <link rel="stylesheet" href="lib/browser/mocha.css" />
-    <script src="./lib/browser/jquery.js"></script>
     <script src="./lib/mocha.js"></script>
     <script>
       mocha.setup('bdd');
@@ -13,10 +12,10 @@
       }
     </script>
     <script src="../src/string-calculator.js"></script>
-    <script src="./string-calculator_test.js"></script>
+    <script type="module" src="./string-calculator_test.js"></script>
     <script>
-      onload = function(){
-        var runner = mocha.run();
+      window.onload = () => {
+        mocha.run();
       };
     </script>
   </head>
