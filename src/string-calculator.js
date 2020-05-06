@@ -13,4 +13,4 @@ const add = (inputString) => {
   return result;
 };
 
-window.stringCalculator = { add };
+export default { add };

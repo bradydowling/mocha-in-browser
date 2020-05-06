@@ -1,3 +1,5 @@
+import stringCalculator from '../src/string-calculator.js';
+
 describe('stringCalculator', () => {
   describe('when an empty string is passed in', () => {
     it('returns 0', () => {
